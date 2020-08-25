@@ -7,6 +7,7 @@ sidebar: home_sidebar
 
 
 
+nb_path: "nbs/01b_models.junyanz.ipynb"
 ---
 <!--
 
@@ -380,7 +381,7 @@ that has the same size as the input.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ResnetGenerator" class="doc_header"><code>class</code> <code>ResnetGenerator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ResnetGenerator</code>(<strong><code>input_nc</code></strong>, <strong><code>output_nc</code></strong>, <strong><code>ngf</code></strong>=<em><code>64</code></em>, <strong><code>norm_layer</code></strong>=<em><code>'BatchNorm2d'</code></em>, <strong><code>use_dropout</code></strong>=<em><code>False</code></em>, <strong><code>n_blocks</code></strong>=<em><code>6</code></em>, <strong><code>padding_type</code></strong>=<em><code>'reflect'</code></em>) :: <code>Module</code></p>
+<h2 id="ResnetGenerator" class="doc_header"><code>class</code> <code>ResnetGenerator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ResnetGenerator</code>(<strong><code>input_nc</code></strong>, <strong><code>output_nc</code></strong>, <strong><code>ngf</code></strong>=<em><code>64</code></em>, <strong><code>norm_layer</code></strong>=<em><code>BatchNorm2d</code></em>, <strong><code>use_dropout</code></strong>=<em><code>False</code></em>, <strong><code>n_blocks</code></strong>=<em><code>6</code></em>, <strong><code>padding_type</code></strong>=<em><code>'reflect'</code></em>) :: <code>Module</code></p>
 </blockquote>
 <p>Resnet-based generator that consists of Resnet blocks between a few downsampling/upsampling operations.</p>
 <p>We adapt Torch code and idea from Justin Johnson's neural style transfer project(<a href="https://github.com/jcjohnson/fast-neural-style">https://github.com/jcjohnson/fast-neural-style</a>)</p>
@@ -431,7 +432,7 @@ that has the same size as the input.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UnetGenerator" class="doc_header"><code>class</code> <code>UnetGenerator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UnetGenerator</code>(<strong><code>input_nc</code></strong>, <strong><code>output_nc</code></strong>, <strong><code>num_downs</code></strong>, <strong><code>ngf</code></strong>=<em><code>64</code></em>, <strong><code>norm_layer</code></strong>=<em><code>'BatchNorm2d'</code></em>, <strong><code>use_dropout</code></strong>=<em><code>False</code></em>) :: <code>Module</code></p>
+<h2 id="UnetGenerator" class="doc_header"><code>class</code> <code>UnetGenerator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UnetGenerator</code>(<strong><code>input_nc</code></strong>, <strong><code>output_nc</code></strong>, <strong><code>num_downs</code></strong>, <strong><code>ngf</code></strong>=<em><code>64</code></em>, <strong><code>norm_layer</code></strong>=<em><code>BatchNorm2d</code></em>, <strong><code>use_dropout</code></strong>=<em><code>False</code></em>) :: <code>Module</code></p>
 </blockquote>
 <p>Create a Unet-based generator</p>
 
@@ -456,7 +457,7 @@ that has the same size as the input.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UnetSkipConnectionBlock" class="doc_header"><code>class</code> <code>UnetSkipConnectionBlock</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UnetSkipConnectionBlock</code>(<strong><code>outer_nc</code></strong>, <strong><code>inner_nc</code></strong>, <strong><code>input_nc</code></strong>=<em><code>None</code></em>, <strong><code>submodule</code></strong>=<em><code>None</code></em>, <strong><code>outermost</code></strong>=<em><code>False</code></em>, <strong><code>innermost</code></strong>=<em><code>False</code></em>, <strong><code>norm_layer</code></strong>=<em><code>'BatchNorm2d'</code></em>, <strong><code>use_dropout</code></strong>=<em><code>False</code></em>) :: <code>Module</code></p>
+<h2 id="UnetSkipConnectionBlock" class="doc_header"><code>class</code> <code>UnetSkipConnectionBlock</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UnetSkipConnectionBlock</code>(<strong><code>outer_nc</code></strong>, <strong><code>inner_nc</code></strong>, <strong><code>input_nc</code></strong>=<em><code>None</code></em>, <strong><code>submodule</code></strong>=<em><code>None</code></em>, <strong><code>outermost</code></strong>=<em><code>False</code></em>, <strong><code>innermost</code></strong>=<em><code>False</code></em>, <strong><code>norm_layer</code></strong>=<em><code>BatchNorm2d</code></em>, <strong><code>use_dropout</code></strong>=<em><code>False</code></em>) :: <code>Module</code></p>
 </blockquote>
 <p>Defines the Unet submodule with skip connection.
 X -------------------identity----------------------
@@ -483,7 +484,7 @@ X -------------------identity----------------------
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="NLayerDiscriminator" class="doc_header"><code>class</code> <code>NLayerDiscriminator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>NLayerDiscriminator</code>(<strong><code>input_nc</code></strong>, <strong><code>ndf</code></strong>=<em><code>64</code></em>, <strong><code>n_layers</code></strong>=<em><code>3</code></em>, <strong><code>norm_layer</code></strong>=<em><code>'BatchNorm2d'</code></em>) :: <code>Module</code></p>
+<h2 id="NLayerDiscriminator" class="doc_header"><code>class</code> <code>NLayerDiscriminator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>NLayerDiscriminator</code>(<strong><code>input_nc</code></strong>, <strong><code>ndf</code></strong>=<em><code>64</code></em>, <strong><code>n_layers</code></strong>=<em><code>3</code></em>, <strong><code>norm_layer</code></strong>=<em><code>BatchNorm2d</code></em>) :: <code>Module</code></p>
 </blockquote>
 <p>Defines a PatchGAN discriminator</p>
 
@@ -508,7 +509,7 @@ X -------------------identity----------------------
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PixelDiscriminator" class="doc_header"><code>class</code> <code>PixelDiscriminator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PixelDiscriminator</code>(<strong><code>input_nc</code></strong>, <strong><code>ndf</code></strong>=<em><code>64</code></em>, <strong><code>norm_layer</code></strong>=<em><code>'BatchNorm2d'</code></em>) :: <code>Module</code></p>
+<h2 id="PixelDiscriminator" class="doc_header"><code>class</code> <code>PixelDiscriminator</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PixelDiscriminator</code>(<strong><code>input_nc</code></strong>, <strong><code>ndf</code></strong>=<em><code>64</code></em>, <strong><code>norm_layer</code></strong>=<em><code>BatchNorm2d</code></em>) :: <code>Module</code></p>
 </blockquote>
 <p>Defines a 1x1 PatchGAN discriminator (pixelGAN)</p>
 
