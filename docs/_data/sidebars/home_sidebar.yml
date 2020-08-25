@@ -5,12 +5,9 @@
 # Instead edit ../../sidebar.json
 entries:
 - folders:
-  - folderitems:
-    - output: web,pdf
-      title: Overview
-      url: /
-    output: web
-    title: Getting Started
+  - output: web,pdf
+    title: Overview
+    url: /
   - folderitems:
     - output: web,pdf
       title: CycleGAN

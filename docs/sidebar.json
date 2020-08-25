@@ -1,7 +1,5 @@
 {
-	"Getting Started": {
-		"Overview": "/"
-	},
+    "Overview": "/",
 	"Models": {
 		"CycleGAN": "/models.cyclegan"
 	},
