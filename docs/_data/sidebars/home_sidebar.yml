@@ -5,33 +5,17 @@
 # Instead edit ../../sidebar.json
 entries:
 - folders:
-  - output: web,pdf
-    title: Overview
-    url: /
   - folderitems:
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: CycleGAN
-        url: /models.cyclegan
-      title: Models
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: Unpaired data loading
-        url: /data.unpaired
-      title: Data loading
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: CycleGAN
-        url: /train.cyclegan
-      title: Training loop
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: CycleGAN
-        url: /inference.cyclegan
-      title: Batch inference
+    - output: web,pdf
+      title: Overview
+      url: /
+    output: web
+    title: Getting Started
+  - folderitems:
+    - output: web,pdf
+      title: CycleGAN
+      url: /models.cyclegan
+    output: web
+    title: Models
   output: web
   title: Sidebar
