@@ -17,5 +17,23 @@ entries:
       url: /models.cyclegan
     output: web
     title: Models
+  - folderitems:
+    - output: web,pdf
+      title: Unpaired data loading
+      url: /data.unpaired
+    output: web
+    title: Data loading
+  - folderitems:
+    - output: web,pdf
+      title: CycleGAN
+      url: /train.cyclegan
+    output: web
+    title: Training loop
+  - folderitems:
+    - output: web,pdf
+      title: CycleGAN
+      url: /inference.cyclegan
+    output: web
+    title: Batch inference
   output: web
   title: Sidebar

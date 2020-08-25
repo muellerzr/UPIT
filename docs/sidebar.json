@@ -1,9 +1,17 @@
 {
-    "Getting Started": {
-        "Overview":"/"
-    },
-    "Models":{
-        "CycleGAN":"/models.cyclegan"
-    }
+	"Getting Started": {
+		"Overview": "/"
+	},
+	"Models": {
+		"CycleGAN": "/models.cyclegan"
+	},
+	"Data loading": {
+		"Unpaired data loading": "/data.unpaired"
+	},
+	"Training loop": {
+		"CycleGAN": "/train.cyclegan"
+	},
+	"Batch inference": {
+		"CycleGAN": "/inference.cyclegan"
+	}
 }
-        
